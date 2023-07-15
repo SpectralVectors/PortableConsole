@@ -2,7 +2,7 @@
 A popup panel that lets you execute Python commands in any context or area in Blender
 
 ## How It Works
-You can F3 search for PortableConsole, or use the built-in shortcut Shift+Ctrl+Alt+P.
+F3 search for PortableConsole, or use the built-in shortcut Shift+Ctrl+Alt+P.
 
 This opens a panel in whatever context your cursor inhabits where you can type or paste Python code.
 
