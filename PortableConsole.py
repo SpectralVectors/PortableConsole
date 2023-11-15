@@ -1,7 +1,7 @@
 bl_info = {
     "name": "PortableConsole",
     "author": "Spectral Vectors",
-    "version": (0, 0, 1),
+    "version": (0, 0, 2),
     "blender": (2, 90, 0),
     "location": "F3 > PortableConsole or Shift+Ctrl+Alt+P",
     "description": "A popup panel to run Python in any area or context",
@@ -43,11 +43,7 @@ def register():
     wm = bpy.context.window_manager
     kc = wm.keyconfigs.user
 
-    km = kc.keymaps.new(
-        name="Window",
-        space_type='EMPTY',
-        region_type='WINDOW'
-        )
+    km = kc.keymaps['Window']
     kmi = km.keymap_items.new(
         "addon.portable_console",
         'P',
